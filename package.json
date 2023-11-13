@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "eslint": "^8.48.0",
+    "prettier": "^3.0.3",
+    "tsconfig": "workspace:*",
+    "turbo": "^1.10.16"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "dev": "turbo run dev",
+    "generate": "turbo run generate",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish",
+    "tauri": "turbo run tauri"
+  },
+  "packageManager": "pnpm@8.7.1"
+}

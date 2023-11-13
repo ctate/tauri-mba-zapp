@@ -1,0 +1,9 @@
+name: chatgpt-mba
+title: ChatGPT
+version: 1.0.0
+description: Use ChatGPT from your menu bar
+app:
+  icon: resources/icon.png
+  url: https://chat.openai.com
+  height: 600
+  width: 600
